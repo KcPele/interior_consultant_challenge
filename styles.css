@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  font-style: normal;
+  color: white;
+  font-family: "Montserrat";
+}
+
+body {
+  background-color: black;
+  color: white;
+
+  padding: 0;
+  margin: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  margin: auto 50px;
+}
+
+/* Style the links inside the navigation bar */
+
+.nav-head {
+  display: inline-block;
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  text-decoration-line: underline;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  /* background-color: gray; */
+  margin: 221px auto;
+  height: 600px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modern {
+  width: 410px;
+  margin-bottom: 50px;
+}
+
+.image-wrapper {
+  width: 821.11px;
+  height: 586.53px;
+}
+h2 {
+  font-family: "Lora";
+
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+}
+h2 + p {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+img {
+  object-fit: contain;
+  width: 821.11px;
+  height: 586.53px;
+}
+
+.top-box {
+  width: 410px;
+  height: 189;
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  left: 340px;
+  top: -90px;
+  padding: 20px;
+}
+.topBox-flex {
+  display: flex;
+}
+.topBox-flex > img {
+  width: 65px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.top-box h4 {
+  width: 270px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+.top-box-div span {
+  width: 95px;
+  height: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+}
+.top-box-div p {
+  width: 102px;
+  height: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+  margin-bottom: 0;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.fa-solid {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+@media only screen and (max-width: 600px) {
+  .topnav {
+    margin: auto 20px;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .wrapper {
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 400px;
+    margin-top: 60px;
+  }
+
+  .h2 {
+    width: 274px;
+    font-size: 36px;
+  }
+  .h2 + p {
+    width: 250px;
+    height: 85px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  img {
+    width: 391px;
+    height: auto;
+  }
+  .top-box {
+    width: 300px;
+    height: 138px;
+    left: 65px;
+    top: -60px;
+  }
+  .top-box > img {
+    width: 62px;
+  }
+  .top-box > h4 {
+    width: 210px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    height: 776px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .topnav.responsive .nav-head {
+    display: none;
+  }
+}

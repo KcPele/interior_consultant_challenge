@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interior consultant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia|Crimson Pro|Montserrat|Lora"
+    />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <h3 class="nav-head">The Interior</h3>
+
+      <a href="#home" class="active">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <main>
+      <div class="wrapper">
+        <div class="modern">
+          <h2>Modern interior</h2>
+          <p>
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <button>Read more <i class="fa fa-solid fa-arrow"></i></button>
+        </div>
+        <div class="image-wrapper">
+          <img src="photo1.png" alt="nice well arranged sitting room" />
+          <div class="top-box">
+            <div class="topBox-flex">
+              <img src="photo2.png" alt="" />
+              <div class="top-box-div">
+                <span>Aliza Webber</span>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <h4>Designed in 2020 by Aliza Webber</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>created by Kcpele - devChallenge.io</p>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
